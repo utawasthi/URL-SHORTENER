@@ -7,14 +7,19 @@ const urlRoutes = require('./routes/urlRoutes');
 
 app.use(cors());
 
-// connect to the database....
+// Connect to the database
 connectToDB();
 
 app.use(express.json());
+
+app.get('/', (req, res) => {
+  res.send('Welcome to the URL Shortener API!');
+});
+
+// API routes
 app.use('/api', urlRoutes);
 
-const PORT = process.env.PORT;
-
-app.listen(PORT , () => {
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
   console.log(`Server listening on PORT ${PORT}`);
 });
