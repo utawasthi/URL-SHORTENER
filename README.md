@@ -60,7 +60,7 @@ This project is a URL Shortener web application. The backend is built using [Exp
 
 ## Usage
 
-1. Open the frontend app at `http://localhost:3000`.
+1. Open the frontend app at `http://localhost:5173/`.
 2. Enter a URL in the input field to generate a shortened URL.
 3. Use the generated short URL to be redirected to the original URL.
 
